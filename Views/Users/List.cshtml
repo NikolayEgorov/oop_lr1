@@ -12,12 +12,10 @@
         <div class="col-12">
             <div class="row">
                 <div class="col-md-4" style="padding: 15px;">
-                    <a class="btn btn-primary" href="/users/add" role="button">Новий</a>
-                </div>
-                <div class="col-md-4">
-                    <form action="/users/clear" method="post">
-                        <button class="btn btn-danger" style="display: inline" type="submit">Очистити</button>
-                    </form>
+                    <a class="btn btn-primary" style="display: inline;" href="/users/add" role="button">Новий</a>
+                    <a class="btn btn-danger" style="display: inline;" href="javascript:void(0)" onclick="document.getElementById('clear-form').submit()" role="button">Очистити</a>
+                    
+                    <form id="clear-form" action="/users/clear" method="post"></form>
                 </div>
             </div>
 
