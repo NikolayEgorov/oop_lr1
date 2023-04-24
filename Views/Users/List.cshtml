@@ -1,0 +1,30 @@
+@using labrob1.Models
+@model IEnumerable<User>
+
+@{
+    Layout= null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title></title>        
+    </head>
+
+    <body>
+        <h2>Користувачі</h2>
+
+        @{
+            foreach(var user in Model) {
+                <div>
+                    <h2># @user.id.ToString()</h2>
+                    <h2>Ім'я: @user.name</h2>
+                    <h2>Прізвище: @user.surname</h2>
+                    <h2>Досвід програмування: @user.skillage.ToString() років</h2>
+                </div>
+            }
+        }
+    </body>
+</html>

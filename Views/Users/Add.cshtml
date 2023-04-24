@@ -1,0 +1,29 @@
+@using labrob1.Models
+@model IEnumerable<User>
+
+@{
+    Layout= null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title></title>        
+    </head>
+
+    <body>
+        <h2>Новий користувач</h2>
+
+        <form asp-action="Add" method="post">
+            <input type="hidden" name="id" value="0">
+
+            <input type="text" name="name">
+            <input type="text" name="surname">
+            <input type="number" name="skillage">
+
+            <button type="submit">Зберегти</button>
+        </form>
+    </body>
+</html>
