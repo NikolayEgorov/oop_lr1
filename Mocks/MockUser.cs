@@ -10,17 +10,29 @@ using System.Text;
 
 public class MockUser : IUsers
 {
+    private string _path;
     private string _file;
     
     public MockUser(IWebHostEnvironment env)
     {
-        _file = env.ContentRootPath
-            + "/db_files/users.txt";
+        _path = env.ContentRootPath + "/db_files/";
+        _file = "users.txt";
+    }
+
+    private string FullFilePath()
+    {
+        return _path + _file;
     }
 
     private void save(string data)
     {
-        using (FileStream fs = File.Create(_file))
+        bool pathExists = System.IO.Directory.Exists(_path);
+        if(! pathExists) {
+            System.IO.Directory.CreateDirectory(_path);
+        }
+
+        string file = this.FullFilePath();
+        using (FileStream fs = File.Create(file))
         {
             byte[] bytes = new UTF8Encoding(true).GetBytes(data);
             fs.Write(bytes, 0, bytes.Length);
@@ -31,12 +43,12 @@ public class MockUser : IUsers
     public List<User> Users
     {
         get {
-            if(! File.Exists(_file)) {
+            if(! File.Exists(this.FullFilePath())) {
                 List<User> users = new List<User> {};
                 this.save(JsonSerializer.Serialize(users));
             }
 
-            StreamReader reader = File.OpenText(_file);
+            StreamReader reader = File.OpenText(this.FullFilePath());
 
             string read = reader.ReadLine();
             if(read != null) {
