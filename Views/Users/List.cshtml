@@ -6,13 +6,18 @@
 }
 
 @{
-    <div class="row">
-        <div class="col-12">
-            <h2>Користувачі</h2>
+    <div class="row mt-5" style="margin: 15px;">
+        <h2>Користувачі</h2>
 
+        <div class="col-12">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding: 15px;">
                     <a class="btn btn-primary" href="/users/add" role="button">Новий</a>
+                </div>
+                <div class="col-md-4">
+                    <form action="/users/clear" method="post">
+                        <button class="btn btn-danger" style="display: inline" type="submit">Очистити</button>
+                    </form>
                 </div>
             </div>
 
