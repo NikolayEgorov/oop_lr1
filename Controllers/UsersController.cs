@@ -20,14 +20,27 @@ public class UsersController : Controller {
         return View(users);
     }
 
+    [HttpGet]
+    [Route("/users/add")]
     public ViewResult Add() {
         return View();
     }
 
-    [HttpPost("/user")]
+    [HttpPost]
+    [Route("/users/add")]
     public RedirectToActionResult Add(User user) {
         List<User> users = _users.Users;
         users.Add(user);
+
+        _users.Users = users;
+        return RedirectToAction("List");
+    }
+
+    [HttpPost]
+    [Route("/users/clear")]
+    public RedirectToActionResult Clear() {
+        List<User> users = _users.Users;
+        users.Clear();
 
         _users.Users = users;
         return RedirectToAction("List");

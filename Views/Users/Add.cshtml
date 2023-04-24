@@ -5,28 +5,28 @@
     Layout= "_Layout";
 }
 
-<div class="row mt-5 ml-5">
+<div class="row" style="margin: 15px;">
     <div class="col-md-6">
         <form asp-controller="Users" asp-action="Add" method="post">
             <input type="hidden" name="id" value="0">
 
             <div class="mb-3 row">
-                <label for="surname" class="col-sm-2 col-form-label">Прізвище</label>
-                <div class="col-sm-10">
+                <label for="surname" class="col-sm-4 col-form-label">Прізвище</label>
+                <div class="col-sm-6">
                     <input type="text" class="form-control" id="surname" name="surname">
                 </div>
             </div>
 
             <div class="mb-3 row">
-                <label for="name" class="col-sm-2 col-form-label">Ім'я</label>
-                <div class="col-sm-10">
+                <label for="name" class="col-sm-4 col-form-label">Ім'я</label>
+                <div class="col-sm-6">
                     <input type="text" class="form-control" id="name" name="name">
                 </div>
             </div>
 
             <div class="mb-3 row">
-                <label for="skillage" class="col-sm-2 col-form-label">Досвід програмування</label>
-                <div class="col-sm-10">
+                <label for="skillage" class="col-sm-4 col-form-label">Досвід програмування</label>
+                <div class="col-sm-6">
                     <input type="number" class="form-control" id="skillage" name="skillage">
                 </div>
             </div>
