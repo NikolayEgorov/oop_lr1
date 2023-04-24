@@ -14,6 +14,7 @@ public class UsersController : Controller {
         _users = users;
     }
 
+    [Route("users")]
     public ViewResult List() {
         var users = _users.Users;
         return View(users);
@@ -23,9 +24,12 @@ public class UsersController : Controller {
         return View();
     }
 
-    [HttpPost]
+    [HttpPost("/user")]
     public RedirectToActionResult Add(User user) {
-        _users.Users.Add(user);
+        List<User> users = _users.Users;
+        users.Add(user);
+
+        _users.Users = users;
         return RedirectToAction("List");
     }
 }

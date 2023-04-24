@@ -18,6 +18,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UsePathBase("/home/mykola/dotNetProjects/labrob1");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

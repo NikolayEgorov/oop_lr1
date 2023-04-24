@@ -21,9 +21,7 @@
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/staticwebassets.pack.json
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/staticwebassets.build.json
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/staticwebassets.development.json
-/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/bundle/labrob1.styles.css
-/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/projectbundle/labrob1.bundle.scp.css
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/labrob1.dll
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/refint/labrob1.dll
 /home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/labrob1.pdb

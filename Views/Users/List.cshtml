@@ -2,29 +2,40 @@
 @model IEnumerable<User>
 
 @{
-    Layout= null;
+    Layout= "_Layout";
 }
 
-<!DOCTYPE html>
+@{
+    <div class="row">
+        <div class="col-12">
+            <h2>Користувачі</h2>
 
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-        <title></title>        
-    </head>
-
-    <body>
-        <h2>Користувачі</h2>
-
-        @{
-            foreach(var user in Model) {
-                <div>
-                    <h2># @user.id.ToString()</h2>
-                    <h2>Ім'я: @user.name</h2>
-                    <h2>Прізвище: @user.surname</h2>
-                    <h2>Досвід програмування: @user.skillage.ToString() років</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="btn btn-primary" href="/users/add" role="button">Новий</a>
                 </div>
-            }
-        }
-    </body>
-</html>
+            </div>
+
+            <table class="table mt-5">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ім'я</th>
+                        <th>Прізвище</th>
+                        <th>Досвід програмування</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var user in Model) {
+                        <tr>
+                            <td>@user.id.ToString()</td>
+                            <td>@user.name</td>
+                            <td>@user.surname</td>
+                            <td>@user.skillage.ToString() років</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

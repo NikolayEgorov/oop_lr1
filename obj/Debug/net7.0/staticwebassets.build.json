@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cSNIpeVhCvpv/vyNbycfRRElumD5sUPPxDA4UPbU+xk=",
+  "Hash": "7VAAWkL6heSVdPXnjrrFYoVRK8OXy9HD9hv9wW9cxCA=",
   "Source": "labrob1",
   "BasePath": "_content/labrob1",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/bundle/labrob1.styles.css",
-      "SourceId": "labrob1",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/bundle/",
-      "BasePath": "_content/labrob1",
-      "RelativePath": "labrob1.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/bundle/labrob1.styles.css"
-    },
-    {
-      "Identity": "/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/projectbundle/labrob1.bundle.scp.css",
-      "SourceId": "labrob1",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/projectbundle/",
-      "BasePath": "_content/labrob1",
-      "RelativePath": "labrob1.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/mykola/dotNetProjects/labrob1/obj/Debug/net7.0/scopedcss/projectbundle/labrob1.bundle.scp.css"
-    },
     {
       "Identity": "/home/mykola/dotNetProjects/labrob1/wwwroot/css/site.css",
       "SourceId": "labrob1",
